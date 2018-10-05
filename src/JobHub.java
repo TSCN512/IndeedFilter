@@ -109,9 +109,9 @@ public class JobHub
                             continue;
                         System.out.println(job.toString().replaceAll("<[^>]*>", ""));
                         System.out.println('\t' + job.lastElementSibling().select("span.summary").toString().replaceAll("<[^>]*>", "") + '\n');
-                        //System.out.println(job.lastElementSibling().select("span.date").toString());
+                        
                     }
-                    //System.out.println(titleListings.first().lastElementSibling().select("span.summary").toString());
+
                 }
                 catch (IOException e)
                 {
