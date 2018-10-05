@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 
+//I have "software engineer" defaulted as program arguments
+
 public class JobHub
 {
     public static void main(String[] args)
@@ -22,12 +24,14 @@ public class JobHub
         {
             case 1:
             {
-                System.out.println("Which city are you looking at today? \nNewark(1)\nJersey City(2)\nSeacaucus(3)\nWeehawken(4)\nRoseland(5)\nEdison(6)\nHoboken(7)\nAll(8)");
+                System.out.println("Which city are you looking at today? \nNewark(1)\nJersey City(2)\nSeacaucus(3)\nWeehawken(4)\nRoseland(5)\nEdison(6)\nHoboken(7)\nClifton(8)\n" +
+                        "All(9)");
 
                 indeed(input.nextInt(), search);
                 while(true)
                 {
-                    System.out.println("See More? \nNewark(1)\nJersey City(2)\nSeacaucus(3)\nWeehawken(4)\nRoseland(5)\nEdison(6)\nHoboken(7)\nAll(8)\nExit(0)");
+                    System.out.println("See More? \nNewark(1)\nJersey City(2)\nSeacaucus(3)\nWeehawken(4)\nRoseland(5)\nEdison(6)\nHoboken(7)\nClifton(8)\n" +
+                            "All(9)\nExit(0)");
                     int choice = input.nextInt();
                     if(choice==0)
                         break;
@@ -87,6 +91,11 @@ public class JobHub
                 cities.put("Hoboken", "https://www.indeed.com/jobs?q="+search+"&rbl=Hoboken,+NJ&jlid=9b1805cecf09cc58&sort=date");
                 break;
             }
+            case 8:
+            {
+                cities.put("Clifton","https://www.indeed.com/jobs?q="+search+"&rbl=Clifton,%20NJ&jlid=62632718aaae6b97&sort=date");
+                break;
+            }
             default:
             {
                 cities.put("Newark", "https://www.indeed.com/jobs?q="+search+"&rbl=Newark,+NJ&jlid=fc0723f9333e9830&sort=date");
@@ -96,6 +105,7 @@ public class JobHub
                 cities.put("Roseland", "https://www.indeed.com/jobs?q="+search+"&rbl=Roseland,+NJ&jlid=218092364ca6bfe9&sort=date");
                 cities.put("Edison", "https://www.indeed.com/jobs?q="+search+"&rbl=Edison,+NJ&jlid=6978f3e2f6212bdf&sort=date");
                 cities.put("Hoboken", "https://www.indeed.com/jobs?q="+search+"&rbl=Hoboken,+NJ&jlid=9b1805cecf09cc58&sort=date");
+                cities.put("Clifton", "https://www.indeed.com/jobs?q="+search+"&rbl=Clifton,%20NJ&jlid=62632718aaae6b97&sort=date");
                 break;
             }
         }
