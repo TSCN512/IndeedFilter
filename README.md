@@ -6,4 +6,4 @@ It takes command arguments passed through the script as a search term and is con
  
 
 
-Uses the jsoup library
+Uses the jsoup library, thought it would be interesting to practice more web scraping and formatting results
