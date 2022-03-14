@@ -1,4 +1,4 @@
-# MiniGadget1
+# IndeedFilter
 
 This is run by me with a script on startup usually
 
